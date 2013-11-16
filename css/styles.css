@@ -1,0 +1,93 @@
+/*base*/
+body {
+  background-color: #f6f6f6;
+  font-size: 18px;
+}
+/*grid*/
+.row {
+  width: auto;
+  background-color: #fff;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col {
+  float: none;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.fifty,
+.thirty,
+.quarter,
+.threeQuarter,
+.twenty,
+.ten {
+  width: 100%;
+}
+/*add your layout classes here*/
+.logo,
+.main-content,
+.main-sidebar,
+.info,
+.social-media,
+.links {
+  float: none;
+  box-sizing: border-box;
+  padding: 20px;
+}
+@media only screen and (min-width: 568px) {
+  /*the layout goes here*/
+  .logo {
+    float: left;
+    padding: 20px 40px;
+  }
+  .main-content {
+    float: left;
+    padding: 20px 40px;
+    width: 50%;
+  }
+  .main-sidebar {
+    float: left;
+    padding: 20px 40px;
+    width: 50%;
+  }
+  .info {
+    float: left;
+    padding: 20px 40px;
+    width: 50%;
+  }
+  .social-media {
+    float: left;
+    padding: 20px 40px;
+    width: 25%;
+  }
+  .links {
+    float: left;
+    padding: 20px 40px;
+    width: 25%;
+  }
+  .col {
+    float: left;
+    padding: 20px 40px;
+  }
+  .fifty {
+    width: 50%;
+  }
+  .thirty {
+    width: 33.333333%;
+  }
+  .quarter {
+    width: 25%;
+  }
+  .threeQuarter {
+    width: 75%;
+  }
+  .twenty {
+    width: 20%;
+  }
+  .ten {
+    width: 10%;
+  }
+}
