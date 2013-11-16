@@ -1,12 +1,31 @@
 /*base*/
 body {
-  background-color: #f6f6f6;
+  background-color: #eae8dc;
   font-size: 18px;
+  line-height: 26px;
+  color: #615e4c;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  color: #df5737;
+  font-weight: 100;
+}
+h2 {
+  color: #354046;
+  font-weight: 100;
+}
+h4 {
+  color: #146b8f;
+  font-weight: 100;
+}
+/*common font styles*/
+.fnt-thin {
+  font-weight: 100;
 }
 /*grid*/
 .row {
   width: auto;
-  background-color: #fff;
 }
 .row:after {
   content: "";
@@ -89,5 +108,16 @@ body {
   }
   .ten {
     width: 10%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 800px) {
+  .info {
+    width: 33.333333%;
+  }
+  .social-media {
+    width: 33.333333%;
+  }
+  .links {
+    width: 33.333333%;
   }
 }
