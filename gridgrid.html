@@ -16,20 +16,33 @@
 <header class="row">
 	
 	<div  class="logo">
-		<h1>Logo</h1>
+		<h1>GridGrid</h1>
 	</div>
 	
 </header>
 
 <main class="row">
 	<div class="main-content">
-		<h2>Main content</h2>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<h2>A simple grid made with LESS</h2>
+		This grid was made with a simple and sematic htlm in mind. Many of the CSS grids I have tested always end up creating too much html and do not have the optimal semantic structure. Using LESS, this can now be achieved fairly easy and you can keep your code to a minimum and your layout flexible.
 	</div>
 	
 	<div class="main-sidebar">
-		<h2>Main sidebar</h2>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		<h2>Grid structure</h2>
+		<pre>.row {
+  width: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col {
+  float: none;
+  box-sizing: border-box;
+  padding: 20px;
+}
+</pre>
 		
 	</div>
 	
@@ -37,15 +50,15 @@
 <footer class="row">
 	
 	<div class="info"><h4>About</h4>
-		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>The only grid class you need to add to your html is the .row class. Add this to any element that acts as a row container, e.g header, main or footer. Typically you would add a div with a .col class inside the row container, but we'll let LESS handle this.</p>
 		</div>
 	
-	<div class="social-media"><h4>Twitter</h4>
-		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div class="social-media"><h4>Tumblr</h4>
+		<p>You can follow my small attempts at smarter webdesign on my blog <a href="benspopshop.tumblr.com" title="benspopshop.com">benspopshop.tumblr.com</a>  </p>
 		</div>
 	
-	<div class="links"><h4>Links</h4>
-		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div class="links"><h4>Credits</h4>
+		<p>I have borrowed bits and pieces from various sources <a href="https://smacss.com">smacss.com</a>, <a href="http://unsemantic.com/">unsemantic</a> and <a href="http://ux.mailchimp.com/patterns/">mailchimp</a> </p>
 		</div>
 	
 </footer>
