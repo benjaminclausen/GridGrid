@@ -1,8 +1,8 @@
 /*base*/
 body {
   background-color: #eae8dc;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 29px;
   color: #615e4c;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
@@ -13,17 +13,31 @@ h1 {
 }
 h2 {
   color: #354046;
+  line-height: 36px;
   font-weight: 100;
 }
 h4 {
   color: #146b8f;
   font-weight: 100;
 }
-a:link, a:visited, a:hover, a:active {text-decoration:none; color:#df5737;}
-pre {font-size:70%;line-height:normal;}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #df5737;
+}
+pre {
+  font-size: 70%;
+  line-height: normal;
+}
 /*common font styles*/
 .fnt-thin {
   font-weight: 100;
+}
+/* helpers */
+.h-txt-algn-c {
+  text-align: center;
 }
 /*grid*/
 .row {
@@ -56,6 +70,13 @@ pre {font-size:70%;line-height:normal;}
 .links {
   float: none;
   box-sizing: border-box;
+  padding: 20px;
+}
+.l-header {
+  background-color: #f6f6f6;
+}
+.l-footer {
+  background-color: #f6f6f6;
   padding: 20px;
 }
 @media only screen and (min-width: 568px) {
