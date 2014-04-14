@@ -1,6 +1,6 @@
 /*base*/
 body {
-  background-color: #eae8dc;
+  background-color: #fff;
   font-size: 21px;
   line-height: 29px;
   color: #615e4c;
@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 h1 {
-  color: #df5737;
+  color: #fff;
   font-weight: 100;
 }
 h2 {
@@ -52,6 +52,7 @@ pre {
   float: none;
   box-sizing: border-box;
   padding: 20px;
+  word-wrap: break-word;
 }
 .fifty,
 .thirty,
@@ -71,20 +72,27 @@ pre {
   float: none;
   box-sizing: border-box;
   padding: 20px;
+  word-wrap: break-word;
 }
 .l-header {
-  background-color: #f6f6f6;
+  background-color: #061524;
+  text-align: center;
 }
 .l-footer {
   background-color: #f6f6f6;
   padding: 20px;
 }
-@media only screen and (min-width: 568px) {
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.btn-outline {
+  border: 1px	solid	#df5737;
+  border-radius: 3px;
+  margin: auto;
+}
+@media only screen and (min-width: 640px) {
   /*the layout goes here*/
-  .logo {
-    float: left;
-    padding: 20px 40px;
-  }
   .main-content {
     float: left;
     padding: 20px 40px;
@@ -114,6 +122,9 @@ pre {
     float: left;
     padding: 20px 40px;
   }
+  .full {
+    width: 100%;
+  }
   .fifty {
     width: 50%;
   }
@@ -133,14 +144,14 @@ pre {
     width: 10%;
   }
 }
-@media only screen and (min-width: 568px) and (max-width: 800px) {
+@media only screen and (min-width: 640px) and (max-width: 960px) {
   .info {
-    width: 33.333333%;
+    width: 100%;
   }
   .social-media {
-    width: 33.333333%;
+    width: 50%;
   }
   .links {
-    width: 33.333333%;
+    width: 50%;
   }
 }

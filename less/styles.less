@@ -1,6 +1,6 @@
 /*base*/
-body {background-color: #eae8dc;font-size:21px;line-height:29px;color:#615e4c; font-weight:100;-webkit-font-smoothing: antialiased;}
-h1 {color:#df5737;.fnt-thin;}
+body {background-color: #fff;font-size:21px;line-height:29px;color:#615e4c; font-weight:100;-webkit-font-smoothing: antialiased;}
+h1 {color:#fff;.fnt-thin;}
 h2 {color:#354046;line-height:36px;.fnt-thin;}
 h4 {color:#146b8f;.fnt-thin;}
 
@@ -20,7 +20,8 @@ pre {font-size:70%;line-height:normal;}
 .row {width:auto;}
 .row:after {content:"";display:table;clear:both;}
 
-.col {float:none; box-sizing:border-box; padding: 20px;}
+.col {float:none; box-sizing:border-box; padding: 20px;word-wrap:	break-word;
+}
 
 
 .fifty, .thirty, .quarter, .threeQuarter, .twenty, .ten {width:100%;}
@@ -31,29 +32,41 @@ pre {font-size:70%;line-height:normal;}
 .col;
 }
 
-.l-header {background-color: #f6f6f6;}
+.l-header {background-color: #061524; text-align:	center;
+}
 
 .l-footer {background-color: #f6f6f6; padding: 20px;}
 
-@media only screen and (min-width: 568px) {
+.btn {
+	display:	inline-block;
+	padding:	5px 10px;
+}
 
-@media (max-width:800px) {
+.btn-outline {
+	border:	1px	solid	#df5737;
+	border-radius:	3px;
+	margin:	auto;
+}
+
+@media only screen and (min-width: 640px) {
+
+@media (max-width:960px) {
 .info {
-.thirty;
+.full;
 }
 
 .social-media {
-.thirty;
+.fifty;
 }
 
 .links {
-.thirty;
+.fifty;
 }
 }
 
 /*the layout goes here*/
 .logo {
-.col
+
 }
 
 .main-content {
@@ -83,6 +96,7 @@ pre {font-size:70%;line-height:normal;}
 
 .col {float:left; padding: 20px 40px;}
 
+.full {width:	100%;}
 .fifty {width:50%;}
 .thirty {width:33.333333%;}
 .quarter {width:25%;}
