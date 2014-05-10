@@ -35,6 +35,12 @@ pre {
 .fnt-thin {
   font-weight: 100;
 }
+.fnt-less-focus {
+  font-size: .875em;
+}
+.fnt-small {
+  font-size: small;
+}
 /* helpers */
 .h-txt-algn-c {
   text-align: center;
@@ -106,17 +112,22 @@ pre {
   .info {
     float: left;
     padding: 20px 40px;
-    width: 50%;
+    width: 100%;
+    background-color: rgba(218, 217, 208, 0.98);
+    color: #555;
+  }
+  .info h4 {
+    color: #888;
   }
   .social-media {
     float: left;
     padding: 20px 40px;
-    width: 25%;
+    width: 50%;
   }
   .links {
     float: left;
     padding: 20px 40px;
-    width: 25%;
+    width: 50%;
   }
   .col {
     float: left;
