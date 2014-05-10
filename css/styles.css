@@ -113,8 +113,9 @@ pre {
     float: left;
     padding: 20px 40px;
     width: 100%;
-    background-color: rgba(218, 217, 208, 0.98);
     color: #555;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .info h4 {
     color: #888;
@@ -123,11 +124,13 @@ pre {
     float: left;
     padding: 20px 40px;
     width: 50%;
+    padding-top: 0;
   }
   .links {
     float: left;
     padding: 20px 40px;
     width: 50%;
+    padding-top: 0;
   }
   .col {
     float: left;
@@ -165,4 +168,8 @@ pre {
   .links {
     width: 50%;
   }
+}
+/*theme*/
+.alt-bg {
+  background-color: rgba(218, 217, 208, 0.5);
 }
