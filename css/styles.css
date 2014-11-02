@@ -12,12 +12,12 @@ h1 {
   font-weight: 100;
 }
 h2 {
-  color: #354046;
+  color: #F25965;
   line-height: 36px;
   font-weight: 100;
 }
 h4 {
-  color: #146b8f;
+  color: #2B2547;
   font-weight: 100;
 }
 a:link,
@@ -81,8 +81,14 @@ pre {
   word-wrap: break-word;
 }
 .l-header {
-  background-color: #061524;
+  background-color: #2A2747;
   text-align: center;
+}
+.l-header h1 {
+  color: #F25965;
+}
+.l-header h2 {
+  color: #FBF89D;
 }
 .l-footer {
   background-color: #f6f6f6;
@@ -118,7 +124,7 @@ pre {
     padding-bottom: 0;
   }
   .info h4 {
-    color: #888;
+    color: #CBF5FD;
   }
   .social-media {
     float: left;
