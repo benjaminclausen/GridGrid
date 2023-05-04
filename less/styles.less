@@ -1,124 +1,201 @@
 /*base*/
-body {background-color: #fff;font-size:21px;line-height:29px;color:#615e4c; font-weight:100;-webkit-font-smoothing: antialiased;}
-h1 {color:#fff;.fnt-thin;}
-h2 {color:#F25965;line-height:36px;.fnt-thin;}
-h4 {color:#2B2547;.fnt-thin;}
+body {
+  background-color: #fff;
+  font-size: 21px;
+  line-height: 29px;
+  color: #615e4c;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  color: #fff;
+  .fnt-thin;
+}
+h2 {
+  color: #f25965;
+  line-height: 36px;
+  .fnt-thin;
+}
+h4 {
+  color: #2b2547;
+  .fnt-thin;
+}
 
-a:link, a:visited, a:hover, a:active {text-decoration:none; color:#df5737;}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #df5737;
+}
 
-pre {font-size:70%;line-height:normal;}
+pre {
+  font-size: 70%;
+  line-height: normal;
+}
 
 /*common font styles*/
-.fnt-thin {font-weight:100;}
-.fnt-less-focus  {font-size: .875em;}
-.fnt-small {font-size: small;}
+.fnt-thin {
+  font-weight: 100;
+}
+.fnt-less-focus {
+  font-size: 0.875em;
+}
+.fnt-small {
+  font-size: small;
+}
 /* helpers */
 .h-txt-algn-c {
-  text-align: center;	
+  text-align: center;
 }
 
 /*grid*/
-.row {width:auto;}
-.row:after {content:"";display:table;clear:both;}
-
-.col {float:none; box-sizing:border-box; padding: 20px; word-wrap:	break-word;
+.row {
+  width: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.col {
+  float: none;
+  box-sizing: border-box;
+  padding: 20px;
+  word-wrap: break-word;
+}
 
-.fifty, .thirty, .quarter, .threeQuarter, .twenty, .ten {width:100%;}
+.fifty,
+.thirty,
+.quarter,
+.threeQuarter,
+.twenty,
+.ten {
+  width: 100%;
+}
 
 /*add your layout classes here*/
 
-.logo, .main-content, .main-sidebar, .info, .social-media, .links {
-.col;
+.logo,
+.main-content,
+.main-sidebar,
+.info,
+.social-media,
+.links {
+  .col;
 }
 
-.l-header {background-color: #2A2747; text-align:	center;
-	h1 {
-		color: #F25965;
-	}
-	
-	h2 {
-		color: #FBF89D;
-	}
+.l-header {
+  background-color: #2a2747;
+  text-align: center;
+  h1 {
+    color: #f25965;
+  }
+
+  h2 {
+    color: #fbf89d;
+  }
 }
 
-.l-footer {background-color: #f6f6f6; padding: 20px;}
+.l-footer {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
 
 .btn {
-	display:	inline-block;
-	padding:	5px 10px;
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 .btn-outline {
-	border:	1px	solid	#df5737;
-	border-radius:	3px;
-	margin:	auto;
+  border: 1px solid #df5737;
+  border-radius: 3px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 640px) {
+  @media (max-width: 960px) {
+    .info {
+      .full;
+    }
 
-@media (max-width:960px) {
-.info {
-.full;
-}
+    .social-media {
+      .fifty;
+    }
 
-.social-media {
-.fifty;
-}
+    .links {
+      .fifty;
+    }
+  }
 
-.links {
-.fifty;
-}
-}
+  /*the layout goes here*/
+  .logo {
+  }
 
-/*the layout goes here*/
-.logo {
+  .main-content {
+    .col;
+    .fifty;
+  }
 
-}
+  .main-sidebar {
+    .col;
+    .fifty;
+  }
 
-.main-content {
-.col;
-.fifty;
-}
+  .info {
+    .col;
+    .full;
 
-.main-sidebar {
-.col;
-.fifty;
-}
+    color: #555;
+    padding-top: 0;
+    padding-bottom: 0;
+    h4 {
+      color: #cbf5fd;
+    }
+  }
 
-.info {
-.col;
-.full;
+  .social-media {
+    .col;
+    .fifty;
+    padding-top: 0;
+  }
 
-color: #555;
-padding-top: 0;
-padding-bottom: 0;
-h4 {color:#CBF5FD;}
-}
+  .links {
+    .col;
+    .fifty;
+    padding-top: 0;
+  }
 
-.social-media {
-.col;
-.fifty;
-padding-top: 0;
-}
+  .col {
+    float: left;
+    padding: 20px 40px;
+  }
 
-.links {
-.col;
-.fifty;
-padding-top: 0;
-}
-
-.col {float:left; padding: 20px 40px;}
-
-.full {width:	100%;}
-.fifty {width:50%;}
-.thirty {width:33.333333%;}
-.quarter {width:25%;}
-.threeQuarter {width:75%;}
-.twenty {width:20%}
-.ten {width:10%;}
+  .full {
+    width: 100%;
+  }
+  .fifty {
+    width: 50%;
+  }
+  .thirty {
+    width: 33.333333%;
+  }
+  .quarter {
+    width: 25%;
+  }
+  .threeQuarter {
+    width: 75%;
+  }
+  .twenty {
+    width: 20%;
+  }
+  .ten {
+    width: 10%;
+  }
 }
 
 /*theme*/
-.alt-bg {background-color: rgba(218,217,208, .5);}
+.alt-bg {
+  background-color: rgba(218, 217, 208, 0.5);
+}
